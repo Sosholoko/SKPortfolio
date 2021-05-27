@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Portfolio</title>
+    <style>
+        :root{
+            --clr-accent : rgb(212, 181, 0);
+            --clr-brown : #382f2f;
+        }
+        body{
+            background-color: rgb(255, 97, 82);
+        }
+        h1, h2{
+            color: white;
+        }
+        .logo p{
+            color: white;
+        }
+        #imlogo{
+            filter: invert(1);
+        }
+
+        .section__subtitle--about{
+            color: white;
+        }
+        .about-me__body{
+            color: white;
+        }
+        .my-projects{
+            background-image: none;
+        }
+        .btn{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img id="imlogo" src="../Projects/logo2.png" alt="" height="50px" width="50px"></a><p> > de▽Snake</p>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav_link">Home</a></li>
+                <li class="nav__item"><a href="#project" class="nav_link">What does it do ?</a></li>
+                <li class="nav__item"><a href="#about" class="nav_link">What is it ? </a></li>
+                <li class="nav__item"><a href="#work" class="nav_link">Screenshots</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            <strong>Match⚭Up</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">MatchMaker Ultimate Tool !</p>
+        <img src="../Projects/matchuplogo.png" alt="Me" class="intro__img">
+        
+    </section>
+
+    <section class="my-projects" id="project">
+        <h2 class="section__title section__title--projects">What does it do ? </h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Help</h3>
+                <p>Base goal of the project was to help people for whom, getting in a relationship is not the easiest. MatchUp is here for a creative alternative. Totally free and easy to use, it will greatly simplify MatchMakers's life !</p>
+            </div>
+            <div class="project">
+                <h3>Connect</h3>
+                <p>Match Up messaging feature helps MatchMakers connects each other and make the best of themselves. Messaging one to an other for sharing informations and find the best match possible !</p>
+            </div>
+            <div class="project">
+                <h3>Match</h3>
+                <p>The Matching feature was develop for the MatchMaker to find as quickly and accurately as possible, a perfect match for his/her candidates. It will filter at multiples levels all possibles options.</p>
+            </div>
+        </div>
+
+        <a href="#about" class="btn">See more</a>
+    </section>
+
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">What is it ?</h2>
+        <p class="section__subtitle section__subtitle--about">Match Maker Helping Tool</p>
+
+        <div class="about-me__body">
+            <p>Match Up Tool is a website that will allow Matchmakers to handle most of their job. After creating a free account, it will be possible to add new candidates to their personals lists and find the best match for everyone.</p>
+            <p>Two mains features will make this possible. With the Messaging and the MatchFind features, matching peoples has never been that easy and comfortable !  </p>
+            <p>Techs Used : HTML / CSS / SASS / Bootstrap / Python / Javascript / Flask / SQLACHEMY / Sqlite3</p>
+        </div>
+        <img src="../logos/codeport3.png" alt="Picture of me" height="380px" width="340px" class="about-me__img">
+        <br><a class="btn" href="https://github.com/Sosholoko/Hackathon/tree/main/Hackathon/pynews-q6-master"><i class="fab fa-github"></i> LOOK CODE</a>
+    </section>
+
+
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">More Pictures</h2>
+        <p class="section__subtitle section__subtitle--work">Screenshots</p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="../logos/matchuplogo2.png" alt="Match⚭Up®" class="portfolio__img">
+                <img src="../matchuppicture/homemu.png" alt="Match⚭Up®" class="portfolio__img">
+                <img src="../matchuppicture/signupmu.png" alt="Match⚭Up®" class="portfolio__img">
+                <img src="../matchuppicture/loginmu.png" alt="Match⚭Up®" class="portfolio__img">
+                <img src="../matchuppicture/dashmu.png" alt="Match⚭Up®" class="portfolio__img">
+                <img src="../matchuppicture/messagemu.png" alt="Match⚭Up®" class="portfolio__img">
+                <img src="../matchuppicture/candimu.png" alt="Match⚭Up®" class="portfolio__img">
+                <img src="../matchuppicture/matchmu.png" alt="Match⚭Up®" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:sashakharoubi@gmail.com" class="footer-link">Mail me by Clicking here !</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-linkedin-in"></i> LinkDin</a></li>
+        </ul>
+    </footer>
+
+    <script src="../index.js"></script>
+
+</body>
+</html>

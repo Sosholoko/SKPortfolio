@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Portfolio</title>
+    <style>
+        
+        :root{
+            --clr-accent : #ac7000;
+            --clr-brown : #413046;
+        }
+        
+        body{
+            background-color: #4c0ab8;
+        }
+        h1{
+            color: rgb(255, 255, 255);
+        }
+        .logo p{
+            color: rgb(255, 255, 255);
+        }
+        #imlogo{
+            filter: invert(1);
+        }
+        .about-me__body p{
+            color: rgb(253, 253, 253);
+        }
+        .section__subtitle--intro,
+        .section__subtitle--about{
+            color: rgb(255, 255, 255);
+        }
+        .section__title--projects{
+            color: white;
+        }
+        .section__title--about{
+            color: white;
+        }
+        .btn{
+            background-color: #ac7000;
+        }
+        .my-projects{
+            background-image: none;
+        }
+        .btn{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img id="imlogo" src="../Projects/logo2.png" alt="" height="50px" width="50px"></a><p> > de▽Snake</p>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav_link">Home</a></li>
+                <li class="nav__item"><a href="#project" class="nav_link">What does it do ?</a></li>
+                <li class="nav__item"><a href="#about" class="nav_link">What is it ?</a></li>
+                <li class="nav__item"><a href="#work" class="nav_link">Screenshots</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            <strong>Shooter</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Shooting Game</p>
+        <img src="../gamepicture/gamelogo.png" alt="Me" class="intro__img">
+        
+    </section>
+
+    <section class="my-projects" id="project">
+        <h2 class="section__title section__title--projects">What does it do ? </h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Mobile Game Inspiration</h3>
+                <p>This game was mainly inspired by popular mobile games. Simple gameplay, static scene and childly characters were picked for this project. As a first game project I wanted something useable very fast !</p>
+            </div>
+            <div class="project">
+                <h3>Simplicity</h3>
+                <p>As a first experience in the gaming project, I did it very simply. As it's name tells, its a shooting game. Like most mobile games, it's not supposed to be a mindblowing gameplay, but easy and fastly distracting.</p>
+            </div>
+            <div class="project">
+                <h3>Challenging</h3>
+                <p>Even through a simple gameplay, I wanted to integrate a taste of challenge. That's why at certain time, the ennemies will stop popping and let some fireball falling down the player, the goal being to avoid them obviously !</p>
+            </div>
+        </div>
+
+        <a href="#about" class="btn">See more</a>
+    </section>
+
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">What is it ?</h2>
+        <p class="section__subtitle section__subtitle--about">Simple Python Shooting Game</p>
+
+        <div class="about-me__body">
+            <p> As many little boys, I always wanted to build my own game where I always could win, where I could design everything from A to Z. Wanted something that was mine, even when building game has always in my mind something really hard. </p>
+            <p>So it was a really fun and instructive experience to build such project. It's definitly not perfect but it's fully working and for a first shooting game using Pygame, I think it's a pretty good result !</p>
+            <p>Techs Used : Python / Pygame </p>
+        </div>
+
+        <img src="../logos/codeport3.png" alt="Picture of me" height="380px" width="340px" class="about-me__img">
+        <br><a class="btn" href="https://github.com/Sosholoko/PrivateSOSHO/tree/main/Game"><i class="fab fa-github"></i> LOOK CODE</a>
+    </section>
+
+
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">More Pictures</h2>
+        <p class="section__subtitle section__subtitle--work">Screenshots</p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="../gamepicture/gamelogo.png" alt="Match⚭Up®" class="portfolio__img">
+                <img src="../gamepicture/Screen Shot 2021-05-23 at 4.30.42 PM.png" alt="Hover®" class="portfolio__img">
+                <img src="../gamepicture/Screen Shot 2021-05-23 at 4.30.46 PM.png" alt="Hover®" class="portfolio__img">
+                <img src="../gamepicture/Screen Shot 2021-05-23 at 4.31.22 PM.png" alt="Hover®" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:sashakharoubi@gmail.com" class="footer-link">Mail me by Clicking here !</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-linkedin-in"></i> LinkDin</a></li>
+        </ul>
+    </footer>
+
+    <script src="../index.js"></script>
+
+</body>
+</html>

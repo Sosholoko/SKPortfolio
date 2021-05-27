@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Portfolio</title>
+    <style>
+        
+        :root{
+            --clr-accent : #00aeff;
+            --clr-brown : #364d62;
+        }
+        
+        body{
+            background-color: #002e62;
+        }
+        h1{
+            color: rgb(255, 255, 255);
+        }
+        .logo p{
+            color: rgb(255, 255, 255);
+        }
+        #imlogo{
+            filter: invert(1);
+        }
+        .about-me__body p{
+            color: rgb(253, 253, 253);
+        }
+        .section__subtitle--intro,
+        .section__subtitle--about{
+            color: rgb(255, 255, 255);
+        }
+        .section__title--projects{
+            color: white;
+        }
+        .section__title--about{
+            color: white;
+        }
+        .btn{
+            background-color: rgb(0, 153, 255);
+        }
+        .my-projects{
+            background-image: none;
+        }
+        .btn{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img id="imlogo" src="../Projects/logo2.png" alt="" height="50px" width="50px"></a><p> > de▽Snake</p>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav_link">Home</a></li>
+                <li class="nav__item"><a href="#project" class="nav_link">What does it do ?</a></li>
+                <li class="nav__item"><a href="#about" class="nav_link">What is it ?</a></li>
+                <li class="nav__item"><a href="#work" class="nav_link">Screenshots</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            <strong>TwiBot</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Twitter Bot</p>
+        <img src="../Projects/twibotbg.png" alt="Me" class="intro__img">
+        
+    </section>
+
+    <section class="my-projects" id="project">
+        <h2 class="section__title section__title--projects">What does it do ? </h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Social</h3>
+                <p>Creating a Bot Software can be for many differents usages, but the Social part was definitly the most amusing and fun choice to make. For that I chose Twitter wich like instagram have a really high demand for automation Bots.</p>
+            </div>
+            <div class="project">
+                <h3>Fast & Easy</h3>
+                <p>When I had the idea for this project, I needed something easy and quick to use, not too many options to lose the average user. I then chose to let the user type his credentials and let him choose between Like or Retweet according to a picked topic for the user to choose. </p>
+            </div>
+            <div class="project">
+                <h3>Automation</h3>
+                <p>A bot, as it's name tells, is basically a robot. A robot that will complete the tasks you asked for, and doing it in the most transparent way. My Twibot will like or retweet tweets by itself and wont stop until you choose to, it can run for an entire night for example !  </p>
+            </div>
+        </div>
+
+        <a href="#about" class="btn">See more</a>
+    </section>
+
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">What is it ?</h2>
+        <p class="section__subtitle section__subtitle--about">Auto Like & Retweet for Twitter</p>
+
+        <div class="about-me__body">
+            <p>I've always been fascinated by automation / cheats little softwares. So when I thought about a project to realize, a bot was the natural choice for me to make. I never tried a project like that and it was really exciting to go and try that ! I wanted something cool and actually usefull for a certain type of people.</p>
+            <p>Twibot was at first easy to build, Tkinter was pretty easy to understand for a new one, and I rapidly had a pretty cool GUI. But quicky I had to find the way of targetting likes and retweets according to a topic. I used Selelium for browser automation and it worked well ! After solving out the issues, seeing the program works as predicted was a real pleasure ! </p>
+            <p>Techs Used : Python / Tkinter / Selenium </p>
+        </div>
+
+        <img src="../logos/codeport3.png" alt="Picture of me" height="380px" width="340px" class="about-me__img">
+        <br><a class="btn" href="https://github.com/Sosholoko/PrivateSOSHO/tree/main/TwiBot"><i class="fab fa-github"></i> LOOK CODE</a>
+    </section>
+
+
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">More Pictures</h2>
+        <p class="section__subtitle section__subtitle--work">Screenshots</p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <!-- <img src="../Projects/twibotbg.png" alt="Match⚭Up®" class="portfolio__img"> -->
+                <img src="../Projects/twibot.png" alt="Hover®" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:sashakharoubi@gmail.com" class="footer-link">Mail me by Clicking here !</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-linkedin-in"></i> LinkDin</a></li>
+        </ul>
+    </footer>
+
+    <script src="../index.js"></script>
+
+</body>
+</html>

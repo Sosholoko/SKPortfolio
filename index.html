@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img id="imlogo" src="Projects/logo2.png" alt="" height="50px" width="50px"></a><p> > de▽snake_ </p>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav_link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav_link"><i class="fas fa-question"></i> Who am I ?</a></li>
+                <li class="nav__item"><a href="#do" class="nav_link"><i class="fas fa-user-edit"></i> What do i do ?</a></li>
+                <li class="nav__item"><a href="#work" class="nav_link"><i class="fas fa-briefcase"></i> My Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav_link"><i class="far fa-comments"></i> Get in touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            > Hi, I am <strong>Sasha Kharoubi</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"> >>> FRONT-END DEV</p>
+        <img src="Projects/IMG_0286.jpg" alt="Me" class="intro__img"><br>
+    <div class="logos">
+        <img id="ht" src="langlogo/htmllogo.png" alt="html" height="50px" width="50px">
+        <img id="cs" src="langlogo/csslogo.png" alt="css" height="50px" width="50px">
+        <img id="js" src="langlogo/jslogo.png" alt="js" height="50px" width="50px">
+        <img id="py" src="langlogo/pyhtonlogo.png" alt="python" height="50px" width="50px">
+        <img id="fl" src="langlogo/flasklogo.png" alt="flask" height="50px" width="50px">
+        <img id="gh" src="langlogo/git2logo.png" alt="github" height="50px" width="50px">
+        <img id="gh" src="langlogo/bootlogo.png" alt="github" height="50px" width="50px">
+    </div>
+        
+    </section>
+
+    <section class="my-projects" id="about">
+        <h2 class="section__title section__title--projects">Who am I ?</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Me, Myself & I</h3>
+                <p>My name is Sasha Kharoubi, borned and raised in Paris. I'm now living in Netanya, Israel. <br><br>I grew up with the computer world alongside with my father. Since my young age I always found the technology fascinating and it only got better at the very beggining of that mysterious new thing that came out INTERNET.<br><br> As a curious guy, I definitly wanted to understand it, test it, play with it, and even control it !</p>
+            </div>
+            <div class="project">
+                <h3>Design</h3>
+                <p>Design always had a special place in my heart ! The love for beauty of the Architecture, Technology, Art, Sculpture, Symetry gave me special eyes. <br><br>It was obvious for me to find the Front-End position the more accurate for my personnality. Flat colors, Ergonomic use and Sleek design, is from this day my motto. <br><br>Making good looking and ergonomic design was a priority for me, even a real hobby !  </p>
+            </div> 
+            <div class="project">
+                <h3>Education</h3>
+                <p>For my professional Education, I rapidly found the regular cursus at University not really my thing. I wanted to start practicing my passion and for that I needed something much shorter but nevertheless as hard.<br><br> Coding Bootcamp showed up for me as a great opportunity for me to test my capacities and to focus on the ultimate goal of working as a Front-End dev. <br>Developer's Institute gave me this opportunity! </p>
+            </div>
+        </div>
+
+        <a href="#work" class="btn">My Projects</a>
+    </section>
+
+
+    <section class="about-me" id="do">
+        <h2 class="section__title section__title--about">What do I do ?</h2>
+        <p class="section__subtitle section__subtitle--about">Designer & front-end developer</p>
+
+        <div class="about-me__body">
+            <p>I'm mostly doing WebApp and websites. I also realized a couple of projects that involves databases, encryptions and even games ! <br> <br>Specialized in Javascript, I obviously master HTML and CSS/ SASS. Python is also a language I really appreciate, I'm using it for scripts and automation. One of my projects is a WebScrapping software for Twitter. For interactive websites, I'm using Python-Flask and my OOP skills </p>
+            <p>I can create a full website, Login/Sign Up system and Data Storage solutions. I'm particulary good at creating beautiful and impacting style, making a website ergonomic and easy to use !  </p>
+        </div><br>
+        <a id="cv" href="Portfolio/files/Sasha CV 2.docx"
+            download="Sasha CV 2.docx"> 
+            <i class="fas fa-arrow-alt-circle-down"></i> My CV
+        </a>
+
+        <img src="Projects/IMG_5420 2.jpg" alt="Picture of me" height="380px" width="340px" class="about-me__img">
+    </section>
+
+    <hr class="line">
+
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of 8 of my works</p><br>
+        <p id="tech">Technologies Involved <br><br> <span id="lang"><i class="fab fa-html5"></i>  <i class="fab fa-css3-alt"></i>  <i class="fab fa-sass"></i>  <i class="fab fa-js-square"></i>  <i class="fab fa-python"></i> <i class="fas fa-flask"></i> <i class="fab fa-bootstrap"></i> <i class="fas fa-database"></i></span></p>
+
+        <br><br><div class="portfolio">
+            <!-- <a href="#" class="portfolio__item"> -->
+                <a href="PortfolioPro/proj1.html"><img src="piclogo/salmon-orange-melon-blur-wallpaper-preview.jpg" alt="Hover®" class="portfolio__img" height="200px" width="360px"></a>
+                <a href="PortfolioPro/proj2.html"><img src="piclogo/hoverpic.jpg" alt="Match⚭Up®" class="portfolio__img" height="200px" width="360px"></a>
+                <a href="PortfolioPro/proj3.html"><img src="piclogo/todopic.jpeg" alt="Hover®" class="portfolio__img" height="200px" width="360px"></a>
+                <a href="PortfolioPro/proj4.html"><img src="piclogo/stylinpic.jpg" alt="Stylin" class="portfolio__img" height="200px" width="360px"></a>
+                <a href="PortfolioPro/proj5.html"><img src="piclogo/ttmusic.jpg" alt="TapTapMusic" class="portfolio__img" height="200px" width="360px"></a>
+                <a href="PortfolioPro/proj6.html"><img src="piclogo/passmapicc.jpg" alt="Hover®" class="portfolio__img" height="200px" width="360px"></a>
+                <a href="PortfolioPro/proj7.html"><img src="piclogo/twibotpic.jpg" alt="TwiBot" height="200px" width="360px" class="portfolio__img"></a>
+                <a href="PortfolioPro/proj8.html"><img src="piclogo/shooterpic.jpg" alt="Shooter Game" class="portfolio__img" height="200px" width="360px"></a>
+            <!-- </a> -->
+        </div>
+    </section>
+
+    <footer id="contact">
+        <a href="mailto:sashakharoubi@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> Mail me by Clicking here</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://www.reddit.com/user/MikeyMike555/"><i class="fab fa-reddit"></i> Reddit</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/Sosholoko"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/sasha-kharoubi-516073213/"><i class="fab fa-linkedin-in"></i> LinkDin</a></li>
+        </ul><br>
+        <p>Copyright © 2021 by devsnake. All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

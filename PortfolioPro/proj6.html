@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Portfolio</title>
+    <style>
+        
+        :root{
+            --clr-accent : #4c9c4c;
+            --clr-brown : #37413b;
+        }
+        
+        body{
+            background-color: #354433;
+        }
+        h1{
+            color: rgb(255, 255, 255);
+        }
+        .logo p{
+            color: rgb(255, 255, 255);
+        }
+        #imlogo{
+            filter: invert(1);
+        }
+        .about-me__body p{
+            color: rgb(253, 253, 253);
+        }
+        .section__subtitle--intro,
+        .section__subtitle--about{
+            color: rgb(255, 255, 255);
+        }
+        .section__title--projects{
+            color: white;
+        }
+        .section__title--about{
+            color: white;
+        }
+        .btn{
+            background-color:var(--clr-accent);
+        }
+        .my-projects{
+            background-image: none;
+        }
+        .btn{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img id="imlogo" src="../Projects/logo2.png" alt="" height="50px" width="50px"></a><p> > de▽Snake</p>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav_link">Home</a></li>
+                <li class="nav__item"><a href="#project" class="nav_link">What does is do ?</a></li>
+                <li class="nav__item"><a href="#about" class="nav_link">What is it ?</a></li>
+                <li class="nav__item"><a href="#work" class="nav_link">Screenshots</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            <strong>Pass Manag</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Password Manager</p>
+        <img src="../Projects/passmalogo.jpg" alt="Me" class="intro__img">
+        
+    </section>
+
+    <section class="my-projects" id="project">
+        <h2 class="section__title section__title--projects">What does it do ? </h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Database</h3>
+                <p>One of the main feature, if not the Main feature, is database. For this app, it needs the have access to a databse to store all sorts of credentials that the user want to save. For that I used SQLachemy and Sqlite3 which is a simple solution for basic data storage without getting involved with SQL.</p>
+            </div>
+            <div class="project">
+                <h3>Security</h3>
+                <p>For this kind of software that involves passmords managments, the important thing is of course 'Security'. I needed a secure solution to store the passwords, a protection in case of an attack. I chose password hashing to do this. It will register the main password and credentials as a hashed chain of characters.</p>
+            </div>
+        </div>
+
+        <a href="#about" class="btn">See more</a>
+    </section>
+
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">What is it ?</h2>
+        <p class="section__subtitle section__subtitle--about">Password Manager</p>
+
+        <div class="about-me__body">
+            <p>PassManager is, as it's name indulges, a password manager. Many of thoses softwares already exists out there but I wanted to create mine, and to have GUI for a more comfortable use.</p>
+            <p>Everybody can easily admit that one or many of his accounts is using the same password because the need of reminding many differents passwords is not taken as serious. Solutions like mine allows anyone to store secure passwords and to protect them with only one Masterpassword !</p>
+            <p>Techs Used : Python / Tkinter / SQLACHEMY / Sqlite3</p>
+        </div>
+
+        <img src="../logos/codeport3.png" alt="Picture of me" height="380px" width="340px" class="about-me__img">
+        <br><a class="btn" href="https://github.com/Sosholoko/PrivateSOSHO/tree/main/passmanager"><i class="fab fa-github"></i> LOOK CODE</a>
+    </section>
+
+
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">More Pictures</h2>
+        <p class="section__subtitle section__subtitle--work">Screenshots</p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <!-- <img src="../Projects/passmalogo.jpg" alt="Match⚭Up®" class="portfolio__img"> -->
+                <img src="../passmapicture/Screen Shot 2021-05-20 at 9.54.39 AM.png" alt="Hover®" class="portfolio__img">
+                <img src="../passmapicture/Screen Shot 2021-05-20 at 9.57.44 AM.png" alt="Hover®" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:sashakharoubi@gmail.com" class="footer-link">Mail me by Clicking here !</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fab fa-linkedin-in"></i> LinkDin</a></li>
+        </ul>
+    </footer>
+
+    <script src="../index.js"></script>
+
+</body>
+</html>
