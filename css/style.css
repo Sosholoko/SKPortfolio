@@ -474,7 +474,7 @@ header{
 }
 
 .portfolio__img:hover{
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     opacity: .75;
 }
 
